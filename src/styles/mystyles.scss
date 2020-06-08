@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+
+// Set your brand colors
+// Palette
+$electricPurple: #A449FF;
+$heliotrope: #C879FF;
+$mauve: #FFB7FF;
+$electricBlue: #3BF4FB;
+$inchworm: #CAFF8A;
+// Update Bulma's color variables
+$purple: $electricPurple;
+$primary: $electricBlue;
+$link: $electricPurple;
+$white: #fff;
+
+.has-text-mauve {
+  color: $mauve;
+}
+
+.has-text-heliotrope {
+  color: $heliotrope;
+}
+
+.has-text-inchworm {
+  color: $inchworm;
+}
+
+// Update Bulma's global variables
+$family-sans-serif: 'Aldrich', sans-serif;
+
+// Update some of Bulma's component variables
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+@import "../../node_modules/bulma/bulma.sass";
+
+// Font Awesome styles. Modify this to import only what you need.
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+/* ------------------------
+* Custom styles go here
+---------------------------*/
+
+// Stick the footer to the bottom of the page
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.site-content {
+  flex-grow: 1;
+  overflow: hidden;
+}
+// Modify list styles
+#list-unstyled {
+  list-style: none;
+}
+ul#inline-list-unstyled li {
+  display: inline;
+  list-style: none;
+  margin: 10px;
+}
+// Margins for buttons
+#btn-spaced {
+  margin: 1rem 0;
+}
+// Margins for features icons
+#feature-icon {
+  margin-right: 1.5rem;
+}
+
+// Header video wrapper
+.head-video-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  overflow: hidden;
+}
+.head-video-wrapper iframe {
+  position: absolute;
+  width: 100vw;
+  height: 55.85vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 Why I have problems?*/
+  min-height: 100vh;
+  min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+  z-index: -1;
+}
+
+// Header boxs
+.header-container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-container .top-texts {
+  align-self: center;
+  width: 5%;
+  height: 5%;
+}
+.header-container .middle-texts {
+  align-self: center;
+  width: 50vh;
+}
+.header-container .bottom-texts {
+  align-self: center;
+  width: 5%;
+  height: 5%;
+}
+
+.header-container .title-texts .icons-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.header-container .title-texts .icons-box li {
+  align-self: center;
+}
+
+.icons-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.personalized-main {
+  height: 80vh;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+.personalized-main .box-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.personalized-footer {
+  height: 20vh;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
