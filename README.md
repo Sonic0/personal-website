@@ -1,8 +1,11 @@
 [![AWS](https://img.shields.io/badge/AWS-S3%2BCloudFront-orange?style=flat-square)](https://aws.amazon.com/)
+![Production CI](https://github.com/Sonic0/personal-website/workflows/Production%20CI/badge.svg)
 
 # andreasalvatori.net
 
 My personal website running on Gatsby, hosted on AWS S3 and served by CloudFront
+
+**The site is not online, yet.**
 
 ### 🚀 Features
 
