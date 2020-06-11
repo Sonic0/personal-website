@@ -84,7 +84,7 @@ ul#inline-list-unstyled li {
 .head-video-wrapper iframe {
   position: absolute;
   width: 100vw;
-  height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 Why I have problems?*/
+  height: 55.85vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 Why I have problems?*/
   min-height: 100vh;
   min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
   z-index: -1;
