@@ -32,6 +32,9 @@ jobs:
     - name: install dependencies
       run: npm install
 
+    - name: install gatsby-cli
+      run: npm install -g gatsby-cli
+
     - name: build Gatsby dev site
       run: gatsby build
 
