@@ -5,7 +5,7 @@ export default class Header extends Component {
     return (
       <header class="head-video-wrapper">
         <iframe
-          src="https://player.vimeo.com/video/264340025?background=1&autoplay=1&loop=1&byline=0&title=0&autopause=0&background=1"
+          src="https://player.vimeo.com/video/264340025?background=1&autoplay=1&loop=1&byline=0&title=0&autopause=0"
           title="Background video"
           frameBorder="0"
           webkitallowfullscreen="true"
