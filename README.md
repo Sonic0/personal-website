@@ -2,7 +2,7 @@
 ![Prod CI](https://github.com/Sonic0/personal-website/workflows/Prod%20CI/badge.svg)
 ![Dev CI](https://github.com/Sonic0/personal-website/workflows/Dev%20CI/badge.svg)
 
-# andreasalvatori.net
+# andreasalvatori.net - andreasalvatori.info
 
 My personal website running on Gatsby, hosted on AWS S3 and served by CloudFront
 
