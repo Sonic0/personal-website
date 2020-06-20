@@ -18,6 +18,7 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          shortName
         }
       }
     }
@@ -27,7 +28,7 @@ const Layout = ({ children }) => {
     <>
       {/* Wrapper for sticky footer */}
       <div className="site">
-        <Header nickName={data.site.siteMetadata.title} />
+        <Header nickName={data.site.siteMetadata.shortName} />
         <main className="site-content">{children}</main>
         <MainFooter />
       </div>

@@ -1,5 +1,5 @@
 [![AWS](https://img.shields.io/badge/AWS-S3%2BCloudFront-orange?style=flat-square)](https://aws.amazon.com/)
-![Prod CI](https://github.com/Sonic0/personal-website/workflows/Production%20CI/badge.svg)
+![Prod CI](https://github.com/Sonic0/personal-website/workflows/Prod%20CI/badge.svg)
 ![Dev CI](https://github.com/Sonic0/personal-website/workflows/Dev%20CI/badge.svg)
 
 # andreasalvatori.net

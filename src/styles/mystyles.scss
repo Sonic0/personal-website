@@ -123,18 +123,19 @@ ul#inline-list-unstyled li {
   align-self: center;
 }
 
+/* ############## */
 .icons-box {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.personalized-main {
+.about {
   height: 80vh;
   padding: 1.5rem;
   box-sizing: border-box;
 }
-.personalized-main .box-flex {
+.box-flex {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
