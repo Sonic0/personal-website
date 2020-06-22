@@ -6,8 +6,6 @@
 
 My personal website running on Gatsby, hosted on AWS S3 and served by CloudFront
 
-**The site is not online, yet.**
-
 ## Infrastructure
 
 <a href="https://drive.google.com/uc?export=view&id=1AWr8FwmVnnXD-F07BCADVjhr_LNHRVzD">
