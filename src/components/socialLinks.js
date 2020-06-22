@@ -8,6 +8,17 @@ export default class SocialLinks extends Component {
         <li>
           <span class="icon">
             <a
+              href="https://keybase.io/sonic0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-4x fa-keybase"></i>
+            </a>
+          </span>
+        </li>
+        <li>
+          <span class="icon">
+            <a
               href="https://github.com/Sonic0"
               target="_blank"
               rel="noopener noreferrer"
