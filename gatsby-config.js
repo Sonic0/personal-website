@@ -8,6 +8,7 @@ module.exports = {
     description: config.siteDescription,
     author: config.author,
     authorName: config.authorName,
+    authorDescription: config.userDescription,
     siteUrl: urljoin(config.siteUrl, config.pathPrefix),
   },
   plugins: [
