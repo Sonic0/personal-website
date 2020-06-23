@@ -41,8 +41,7 @@ export default class About extends Component {
 
           <div class="is-size-3 is-size-6-mobile has-text-centered">
             <span>
-              Software developer, network and system administrator, electronics
-              and telecommunications technician
+              {this.props.authorDescription}
             </span>
           </div>
           

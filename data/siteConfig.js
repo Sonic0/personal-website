@@ -15,7 +15,8 @@ const config = {
   userTwitter: "IU6FZL", // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "Italy", // User location to display in the author segment.
   userAvatar: "src/images/avatar.png", // User avatar to display in the author segment.
-  userDescription: "¯_(ツ)_/¯", // User description to display in the author segment.
+  userDescription: 
+    "Software developer, Linux and Open Source enthusiast, Radio-ham ", // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [
     {

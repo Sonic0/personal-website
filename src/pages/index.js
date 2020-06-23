@@ -15,6 +15,7 @@ const IndexPage = ({ data }) => {
         shortName={page.shortName}
         authorName={page.authorName}
         author={page.author}
+        authorDescription={page.authorDescription}
         avatar={files.childImageSharp.fluid}
       />
     </Layout>
@@ -40,6 +41,7 @@ export const query = graphql`
         description
         author
         authorName
+        authorDescription
       }
     }
     file(relativePath: { eq: "avatar.png" }) {
