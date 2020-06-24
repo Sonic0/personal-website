@@ -11,7 +11,7 @@ const config = {
     "The personal site of a very cute developer called Andrea Salvatori ᕕ( ᐛ )ᕗ", // Website description used for meta description tag.
   // siteFBAppID: "", // FB Application ID for using app insights
   cookieHubID: "ee2f58f9", // CookieHub ID
-  googleAnalyticsID: "UA-59515367-9", // GA tracking ID.
+  googleAnalyticsID: "UA-37839374-4", // GA tracking ID.
   userTwitter: "IU6FZL", // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "Italy", // User location to display in the author segment.
   userAvatar: "src/images/avatar.png", // User avatar to display in the author segment.
