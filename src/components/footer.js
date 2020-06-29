@@ -11,7 +11,7 @@ const MainFooter = () => {
             <i class="fa fa-heart"></i>
           </span>{" "}
           by Me{" "}
-          <span>(づ￣ ³￣)づ━☆ﾟ.*･｡ﾟ</span>
+          <span> (づ￣ ³￣)づ━☆ﾟ.*･｡ﾟ</span>
         </p>
       </div>
       {/* Built with Gatsby, Bulma, and Fontawesome */}
