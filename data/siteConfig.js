@@ -18,18 +18,18 @@ const config = {
   userDescription: 
     "Software developer, Linux and Open Source enthusiast, Radio-ham ", // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
-  userLinks: [
+  userLinks: [  // useful for some social plugins
     {
       label: "Twitter",
       url: "https://twitter.com/IU6FZL",
       iconClassName: "fa fa-twitter",
-      // icon: "/icons/twitter.svg"
+      icon: "/icons/twitter.svg"
     },
     {
       label: "Linkedin",
-      url: "https://twitter.com/IU6FZL",
-      iconClassName: "fa fa-twitter",
-      // icon: "/icons/twitter.svg"
+      url: "https://aaa.xx",
+      iconClassName: "fa fa-linkedin",
+      icon: "/icons/linkedin.svg"
     },
   ],
   themeColor: "#A449FF", // Used for setting manifest and progress theme colors.
