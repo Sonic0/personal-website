@@ -2,7 +2,7 @@ import React from "react";
 
 const MainFooter = () => {
   return (
-    <footer class="personalized-footer has-background-primary">
+    <footer class="personalized-footer is-size-7-touch has-background-primary">
       {/* Made by */}
       <div class="content has-text-centered">
         <p>
