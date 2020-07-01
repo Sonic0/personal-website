@@ -29,7 +29,7 @@ export default class Header extends Component {
             </div>
           </div>
 
-          <span class="bottom-texts icon has-text-inchworm">
+          <span class="bottom-texts icon mb-3 has-text-inchworm">
             <i class="fas fa-2x fa-chevron-down"></i>
           </span>
         </div>

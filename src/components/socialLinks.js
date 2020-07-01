@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { config } from '../../data/siteConfig';
 
 export default class SocialLinks extends Component {
   render() {
