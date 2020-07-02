@@ -8,8 +8,8 @@ My personal website running on Gatsby, hosted on AWS S3 and served by CloudFront
 
 ## Infrastructure
 
-<a href="https://drive.google.com/uc?export=view&id=1AWr8FwmVnnXD-F07BCADVjhr_LNHRVzD">
-    <img src="https://drive.google.com/uc?export=view&id=1AWr8FwmVnnXD-F07BCADVjhr_LNHRVzD" style="width: 500px; max-width: 100%; height: auto" title="Click for the larger version." />
+<a href="https://drive.google.com/uc?export=view&id=1zY-I_dZOtORtHzBSepdfkQnQPvxkPj7R">
+    <img src="https://drive.google.com/uc?export=view&id=1zY-I_dZOtORtHzBSepdfkQnQPvxkPj7R" style="width: 500px; max-width: 100%; height: auto" title="Click for the larger version." />
 </a>
 
 ### 🚀 Features

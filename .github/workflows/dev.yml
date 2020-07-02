@@ -41,7 +41,7 @@ jobs:
     - name: Deploy to S3
       uses: jakejarvis/s3-sync-action@master
       with:
-        args: --acl public-read --delete
+        args: --delete # --acl public-read -> for a non public Bucket this causes an "Access denied" error
       env:
         AWS_S3_BUCKET: ${{ secrets.AWS_DEV_BUCKET_NAME }}
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
