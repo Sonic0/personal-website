@@ -16,7 +16,7 @@ export default class Header extends Component {
 
         <div class="header-container">
           <div class="top-texts has-text-centered mt-3">
-            <span class="is-size-5 has-text-weight-bold has-text-inchworm">
+            <span class="is-size-5 has-text-weight-bold has-text-heliotrope">
               {this.props.nickName}
             </span>
           </div>
@@ -29,7 +29,7 @@ export default class Header extends Component {
             </div>
           </div>
 
-          <span class="bottom-texts icon mb-3 has-text-inchworm">
+          <span class="bottom-texts icon mb-3 has-text-heliotrope scroll-down">
             <i class="fas fa-2x fa-chevron-down"></i>
           </span>
         </div>
