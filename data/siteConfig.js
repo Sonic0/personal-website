@@ -16,7 +16,7 @@ const config = {
   userLocation: "Italy", // User location to display in the author segment.
   userAvatar: "src/images/avatar.png", // User avatar to display in the author segment.
   userDescription: 
-    "Software developer, Linux and Open Source enthusiast, Radio-ham ", // User description to display in the author segment.
+    "Software developer, Linux and Open Source enthusiast, Radio-ham", // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [  // useful for some social plugins
     {
