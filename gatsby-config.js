@@ -47,10 +47,10 @@ module.exports = {
           cookieHubV2Api: true,
           // Categories configured with CookieHub
           categories: [
-          { 
-              categoryName: 'analytics', // Unique id of the category which is set by Cookiehub.
-              cookieName: 'gatsby-plugin-google-analytics-gdpr_cookies-enabled' // Your custom cookie name
-          },
+            { 
+                categoryName: 'analytics', // CookieHub Unique ID
+                cookieName: 'ga-gdpr-cookies'
+            }
           ]
       }
     },
@@ -58,19 +58,10 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics-gdpr`,
       options: {
         trackingId: config.googleAnalyticsID,
-        // Optional parameter (default false) - Enable analytics in development mode.
-        enableDevelopment: false,
-        // Optional parameter (default true) - Some countries (such as Germany) require you to use the _anonymizeIP function for Google Analytics. Otherwise you are not allowed to use it.
+        enableDevelopment: false, // Enable analytics in development mode.
         anonymizeIP: true,
-        // Optional parameter (default false) - Starts google analytics with cookies enabled. In some countries (such as Germany) this is not allowed.
-        autoStartWithCookiesEnabled: false, 
-        // Optional parameter - Configuration for react-ga and google analytics 
-        reactGaOptions: {
-            debug: true,
-            gaOptions: {
-                sampleRate: 10
-            }
-        }
+        // Starts google analytics with cookies enabled. In some countries (such as Germany) this is not allowed.
+        autoStartWithCookiesEnabled: false,
       },
     },
   ],
