@@ -37,8 +37,8 @@ export default class MainFooter extends Component {
               href="https://fontawesome.com"
               target="_blank"
               rel="noopener noreferrer"
-            ></a>
-            Fontawesome. Video music by{" "}
+            >Fontawesome</a>.
+            Video music by{" "}
             <a
               href="https://soundcloud.com/argofox/from-the-dust-interstellar-rush"
               target="_blank"
