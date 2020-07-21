@@ -49,7 +49,7 @@ module.exports = {
           categories: [
             { 
                 categoryName: 'analytics', // CookieHub Unique ID
-                cookieName: 'ga-gdpr-cookies'
+                cookieName: 'gatsby-plugin-google-analytics-gdpr_cookies-enabled'
             }
           ]
       }
