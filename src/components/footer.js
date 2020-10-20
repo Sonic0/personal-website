@@ -4,14 +4,12 @@ export default class MainFooter extends Component {
   render() {
     return (
       <footer class="personalized-footer is-size-7-touch has-background-primary">
-        {/* Made by */}
         <div class="content mt-5 has-text-centered">
+          {/* Made by... */}
           <p>
             Made with{" "}
-            <span class="icon has-text-danger">
-              <i class="fa fa-heart"></i>
-            </span>{" "}
-            by Me <span> (づ￣ ³￣)づ━☆ﾟ.*･｡ﾟ</span>
+            <span><b>(づ￣ ³￣)づ━☆ﾟ.*･｡ﾟ</b></span>
+            {" "}by Me 
           </p>
           {/* Built with... / thanks to... */}
           <p>
