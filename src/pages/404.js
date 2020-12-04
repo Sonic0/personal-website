@@ -1,10 +1,10 @@
 import React from "react";
 
-import Layout from "../components/layout";
+// import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 const NotFoundPage = () => (
-  <Layout>
+  <div>
     <SEO title="404: Not found" />
     <section class="section has-text-centered">
       <div class="container">
@@ -20,7 +20,7 @@ const NotFoundPage = () => (
         </p>
       </div>
     </section>
-  </Layout>
+  </div>
 )
 
 export default NotFoundPage

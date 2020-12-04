@@ -10,7 +10,7 @@ const IndexPage = ({ data }) => {
   const files = data.file
   return (
     <Layout>
-      <SEO labg="en" title="Home" />
+      <SEO lang="en" title="Home" />
       <About
         shortName={page.shortName}
         authorName={page.authorName}
