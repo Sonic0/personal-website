@@ -60,9 +60,7 @@ jobs:
         SOURCE_DIR: "public"
 
     - name: Cloudfront chace invalidation
-      run: aws cloudfront create-invalidation \
-            --distribution-id ${{ secrets.CLOUDFRONT_DEV_ID }} \
-            --paths "/index.html" #--paths "/*"
+      run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DEV_ID }} --paths "/index.html" #--paths "/*"
 
 
 #    - name: Copy files to the S3 website content bucket
