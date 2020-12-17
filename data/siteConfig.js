@@ -8,7 +8,7 @@ const config = {
   siteUrl: "https://andreasalvatori.info", // Domain of your website without pathPrefix.
   pathPrefix: "", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription:
-    "The personal site of a very cute developer called Andrea Salvatori ᕕ( ᐛ )ᕗ", // Website description used for meta description tag.
+    "The personal site of a very cute person called Andrea Salvatori ᕕ( ᐛ )ᕗ", // Website description used for meta description tag.
   // siteFBAppID: "", // FB Application ID for using app insights
   cookieHubID: "ee2f58f9", // CookieHub ID
   googleAnalyticsID: "UA-37839374-4", // GA tracking ID.
@@ -16,22 +16,22 @@ const config = {
   userLocation: "Italy", // User location to display in the author segment.
   userAvatar: "src/images/avatar.png", // User avatar to display in the author segment.
   userDescription: 
-    "Software developer, Linux and Open Source enthusiast, Radio-ham", // User description to display in the author segment.
+    "DevOps, Linux and Open Source enthusiast, Radio-ham", // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
-  userLinks: [  // useful for some social plugins
-    {
-      label: "Twitter",
-      url: "https://twitter.com/IU6FZL",
-      iconClassName: "fa fa-twitter",
-      icon: "/icons/twitter.svg"
-    },
-    {
-      label: "Linkedin",
-      url: "https://aaa.xx",
-      iconClassName: "fa fa-linkedin",
-      icon: "/icons/linkedin.svg"
-    },
-  ],
+  // userLinks: [  // useful for some social plugins
+  //   {
+  //     label: "Twitter",
+  //     url: "https://twitter.com/IU6FZL",
+  //     iconClassName: "fa fa-twitter",
+  //     icon: "/icons/twitter.svg"
+  //   },
+  //   {
+  //     label: "Linkedin",
+  //     url: "https://aaa.xx",
+  //     iconClassName: "fa fa-linkedin",
+  //     icon: "/icons/linkedin.svg"
+  //   },
+  // ],
   themeColor: "#A449FF", // Used for setting manifest and progress theme colors.
   backgroundColor: "#fff", // Used for setting manifest background color.
 }

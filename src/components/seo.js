@@ -72,10 +72,11 @@ function SEO({ description, lang, meta, title }) {
   )
 }
 
+
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
-  description: ``,
+  description: `Andrea Salvatori's site`,
 }
 
 SEO.propTypes = {
