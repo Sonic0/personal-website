@@ -40,6 +40,9 @@ jobs:
 
     - name: build Gatsby dev site
       run: gatsby build
+    
+    - name: prune unnecessary files node-modules directory
+      run: node-prune
 
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v1
