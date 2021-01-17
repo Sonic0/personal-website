@@ -38,11 +38,11 @@ jobs:
     - name: install gatsby-cli
       run: npm install -g gatsby-cli
 
-    - name: build Gatsby dev site
-      run: gatsby build
-    
     - name: prune unnecessary files node-modules directory
       run: node-prune
+
+    - name: build Gatsby dev site
+      run: gatsby build
 
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v1
