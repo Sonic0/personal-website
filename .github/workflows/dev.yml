@@ -17,7 +17,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [ 12.x ]
+        node-version: [ 14.x ]
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -32,17 +32,17 @@ jobs:
     - name: Install node-prune
       run: curl -sf https://gobinaries.com/tj/node-prune | sh
 
-    - name: install dependencies
+    - name: Install dependencies
       run: npm install
 
-    - name: install gatsby-cli
+    - name: Install gatsby-cli
       run: npm install -g gatsby-cli
 
-    - name: prune unnecessary files node-modules directory
-      run: node-prune
-
-    - name: build Gatsby dev site
+    - name: Build Gatsby dev site
       run: gatsby build
+
+    - name: Prune unnecessary files node-modules directory
+      run: node-prune node_modules
 
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v1
