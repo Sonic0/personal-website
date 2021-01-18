@@ -36,7 +36,7 @@ export default class MainFooter extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >Fontawesome</a>.
-            Video by{" "}
+            Videos by{" "}
             <a
               href="https://www.youtube.com/c/Sotaa"
               target="_blank"
