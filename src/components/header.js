@@ -4,8 +4,9 @@ export default class Header extends Component {
   render() {
     return (
       <header class="head-video-wrapper">
+        {/* youtube parameters --> https://developers.google.com/youtube/player_parameters */}
         <iframe
-          src="https://youtube.com/embed/qY7rpWA-D4w?autoplay=1&loop=1&rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0&playlist=qY7rpWA-D4w"
+          src="https://www.youtube-nocookie.com/embed?listType=playlist&list=PLZva2YfUdtNJQMIP5nmmoeJXTNjcUHuLz&autoplay=1&loop=1&rel=0&modestbranding=1&controls=0"
           title="Background video"
           frameBorder="0"
           webkitallowfullscreen="true"
@@ -17,7 +18,7 @@ export default class Header extends Component {
         <div class="header-container">
           <div class="top-texts has-text-centered mt-3">
             <span class="is-size-5 has-text-weight-bold has-text-heliotrope">
-              {this.props.nickName}
+              {this.props.nickName} || ¯\_(ツ)_/¯
             </span>
           </div>
 
