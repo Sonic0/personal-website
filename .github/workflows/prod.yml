@@ -61,3 +61,4 @@ jobs:
 
       - name: Cloudfront chace invalidation
         run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_PROD_ID }} --paths "/index.html" #--paths "/*"
+
