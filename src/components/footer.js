@@ -36,13 +36,13 @@ export default class MainFooter extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >Fontawesome</a>.
-            Video music by{" "}
+            Videos by{" "}
             <a
-              href="https://soundcloud.com/argofox/from-the-dust-interstellar-rush"
+              href="https://www.youtube.com/c/Sotaa"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Argofox
+              Sota
             </a>
           </p>
         </div>

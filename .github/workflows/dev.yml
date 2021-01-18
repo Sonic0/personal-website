@@ -5,66 +5,68 @@ name: Dev CI
 on:
   push:
     branches: [ dev ]
-  pull_request:
-    branches: [ dev ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  build:
+  dev-build-deploy:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [ 12.x ]
+        node-version: [ 14.x ]
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
 
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
 
-    - name: Install node-prune
-      run: curl -sf https://gobinaries.com/tj/node-prune | sh
+      - name: Install node-prune
+        run: curl -sf https://gobinaries.com/tj/node-prune | sh
+      
+      - name: Install dependencies
+        run: npm install
 
-    - name: install dependencies
-      run: npm install
+      - name: Install gatsby-cli
+        run: npm install -g gatsby-cli
 
-    - name: install gatsby-cli
-      run: npm install -g gatsby-cli
+      - name: Build Gatsby dev site
+        run: gatsby build
+      
+      # This step is executed during the "Install dependencies" step by the npm "postinstall" option (into the package.json).  
+      # - name: Prune unnecessary files node-modules directory
+      #   run: node-prune node_modules
 
-    - name: build Gatsby dev site
-      run: gatsby build
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+      
+      - name: Deploy to S3
+        uses: jakejarvis/s3-sync-action@master
+        with:
+          args: --delete 
+        env:
+          AWS_S3_BUCKET: ${{ secrets.AWS_DEV_BUCKET_NAME }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+          SOURCE_DIR: "public"
 
-    - name: Configure AWS Credentials
-      uses: aws-actions/configure-aws-credentials@v1
-      with:
-        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: ${{ secrets.AWS_REGION }}
-    
-    - name: Deploy to S3
-      uses: jakejarvis/s3-sync-action@master
-      with:
-        args: --delete 
-      env:
-        AWS_S3_BUCKET: ${{ secrets.AWS_DEV_BUCKET_NAME }}
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        AWS_REGION: ${{ secrets.AWS_REGION }}
-        SOURCE_DIR: "public"
+      - name: Cloudfront chace invalidation
+        run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DEV_ID }} --paths "/index.html" #--paths "/*"
 
-    - name: Cloudfront chace invalidation
-      run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DEV_ID }} --paths "/index.html" #--paths "/*"
-
-#    - name: Copy files to the S3 website content bucket
-#      run: aws s3 sync public s3://${{ secrets.AWS_DEV_BUCKET_NAME }}
-#
-#    - name: create Cloudfront invalidation
-#      run: aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_CLOUDFRONT_WEB_CONTENT }} --paths "/*"
-#
+  #    - name: Copy files to the S3 website content bucket
+  #      run: aws s3 sync public s3://${{ secrets.AWS_DEV_BUCKET_NAME }}
+  #
+  #    - name: create Cloudfront invalidation
+  #      run: aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_CLOUDFRONT_WEB_CONTENT }} --paths "/*"
+  
