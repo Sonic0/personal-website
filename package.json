@@ -6,7 +6,7 @@
   "author": "Andrea Salvatori <andrea.salvatori92@gmail.com>",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
-    "bulma": "~0.9.0",
+    "bulma": "^0.9.0",
     "gatsby": "^2.32.10",
     "gatsby-cli": "^2.19.2",
     "gatsby-image": "^2.11.0",
