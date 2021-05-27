@@ -1,7 +1,7 @@
-import React, { Component } from "react"
-import Img from "gatsby-image"
-import NickName from "../components/nickname"
-import SocialLinks from "../components/socialLinks"
+import React, { Component } from "react";
+import { GatsbyImage } from "gatsby-plugin-image";
+import NickName from "../components/nickname";
+import SocialLinks from "../components/socialLinks";
 
 export default class About extends Component {
   render() {
@@ -21,11 +21,10 @@ export default class About extends Component {
             }}
           >
             {/* The avatar image using gatsby image plugin*/}
-            <Img
+            <GatsbyImage
+              image={this.props.avatar}
               style={{ borderRadius: "40%" }}
-              fluid={this.props.avatar}
-              alt="Sonic0 unicorn avatar"
-            />
+              alt="Sonic0 unicorn avatar" />
           </div>
 
           <div
@@ -56,6 +55,6 @@ export default class About extends Component {
         </div>
         {/* Features section begins */}
       </section>
-    )
+    );
   }
 }

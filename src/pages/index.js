@@ -16,10 +16,10 @@ const IndexPage = ({ data }) => {
         authorName={page.authorName}
         author={page.author}
         authorDescription={page.authorDescription}
-        avatar={files.childImageSharp.fluid}
+        avatar={files.childImageSharp.gatsbyImageData}
       />
     </Layout>
-  )
+  );
 }
 
 IndexPage.propTypes = {
@@ -32,24 +32,21 @@ IndexPage.propTypes = {
 }
 export default IndexPage
 
-export const query = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-        shortName
-        description
-        author
-        authorName
-        authorDescription
-      }
-    }
-    file(relativePath: { eq: "avatar.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 500, quality: 100) {
-          ...GatsbyImageSharpFluid
-        }
-      }
+export const query = graphql`{
+  site {
+    siteMetadata {
+      title
+      shortName
+      description
+      author
+      authorName
+      authorDescription
     }
   }
+  file(relativePath: {eq: "avatar.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 500, quality: 100, layout: CONSTRAINED)
+    }
+  }
+}
 `
