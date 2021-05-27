@@ -1,11 +1,11 @@
 import React from "react";
 
 // import Layout from "../components/layout";
-import SEO from "../components/seo";
+import { SEO as seo } from "../components/seo";
 
 const NotFoundPage = () => (
   <div>
-    <SEO title="404: Not found" />
+    <seo title="404: Not found" />
     <section class="section has-text-centered">
       <div class="container">
         <p>

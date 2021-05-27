@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
-import SEO from "../components/seo";
+import { SEO as seo } from "../components/seo";
 import About from "../components/about";
 
 const IndexPage = ({ data }) => {
@@ -10,7 +10,7 @@ const IndexPage = ({ data }) => {
   const files = data.file
   return (
     <Layout>
-      <SEO lang="en" title="Home" />
+      <seo lang="en" title="Home" />
       <About
         shortName={page.shortName}
         authorName={page.authorName}
