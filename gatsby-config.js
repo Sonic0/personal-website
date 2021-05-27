@@ -20,8 +20,9 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -53,18 +54,11 @@ module.exports = {
             }
           ]
       }
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics-gdpr`,
-      options: {
-        trackingId: config.googleAnalyticsID,
-        // Optional parameter (default false) - Enable analytics in development mode.
-        enableDevelopment: false,
-        // Optional parameter (default true) - Some countries (such as Germany) require you to use the _anonymizeIP function for Google Analytics. Otherwise you are not allowed to use it.
-        anonymizeIP: true,
-        // Starts google analytics with cookies enabled. In some countries (such as Germany) this is not allowed.
-        autoStartWithCookiesEnabled: false,
-      },
-    },
+    }
   ],
+  flags: {
+    DEV_SSR: true,
+    PRESERVE_WEBPACK_CACHE: false,
+    PRESERVE_FILE_DOWNLOAD_CACHE: false
+  }
 }
