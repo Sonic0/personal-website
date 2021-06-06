@@ -2,53 +2,22 @@ import React, { Component } from "react";
 
 export default class SocialLinks extends Component {
   render() {
+    let socialLinks = this.props.userLinks.map((element) => 
+      <li class="px-5 my-4" key={element.label}>
+        <span class="is-size-7-touch">
+          <a
+            href={element.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class={element.iconClassName} aria-hidden="true"></i>
+          </a> 
+        </span>
+      </li>
+    )
+
     return (
-      <ul class="icons-box">
-        <li>
-          <span class="icon">
-            <a
-              href="https://keybase.io/sonic0"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fab fa-4x fa-keybase"></i>
-            </a>
-          </span>
-        </li>
-        <li>
-          <span class="icon">
-            <a
-              href="https://github.com/Sonic0"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fab fa-4x fa-github"></i>
-            </a>
-          </span>
-        </li>
-        <li>
-          <span class="icon">
-            <a
-              href="https://twitter.com/IU6FZL"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fab fa-4x fa-twitter"></i>
-            </a>
-          </span>
-        </li>
-        <li>
-          <span class="icon">
-            <a
-              href="https://www.linkedin.com/in/andrea-salvatori-432929166/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fab fa-4x fa-linkedin-in"></i>
-            </a>
-          </span>
-        </li>
-      </ul>
+      <ul class="is-inline-flex">{socialLinks}</ul>
     )
   }
 }

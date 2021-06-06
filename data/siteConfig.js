@@ -11,27 +11,40 @@ const config = {
     "The personal site of a very cute person called Andrea Salvatori ᕕ( ᐛ )ᕗ", // Website description used for meta description tag.
   // siteFBAppID: "", // FB Application ID for using app insights
   cookieHubID: "ee2f58f9", // CookieHub ID
-  googleAnalyticsID: "UA-37839374-4", // GA tracking ID.
+  // googleAnalyticsID: "UA-37839374-4", // GA tracking ID.
   userTwitter: "IU6FZL", // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "Italy", // User location to display in the author segment.
   userAvatar: "src/images/avatar.png", // User avatar to display in the author segment.
   userDescription: 
     "DevOps, Linux and Open Source enthusiast, Radio-ham", // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
-  // userLinks: [  // useful for some social plugins
-  //   {
-  //     label: "Twitter",
-  //     url: "https://twitter.com/IU6FZL",
-  //     iconClassName: "fa fa-twitter",
-  //     icon: "/icons/twitter.svg"
-  //   },
-  //   {
-  //     label: "Linkedin",
-  //     url: "https://aaa.xx",
-  //     iconClassName: "fa fa-linkedin",
-  //     icon: "/icons/linkedin.svg"
-  //   },
-  // ],
+  userLinks: [  // useful for some social plugins
+    {
+      label: "KeyBase",
+      url: "https://keybase.io/sonic0",
+      iconClassName: "fab fa-4x fa-keybase"
+    },
+    {
+      label: "GitHub",
+      url: "https://github.com/Sonic0",
+      iconClassName: "fab fa-4x fa-github"
+    },
+    {
+      label: "Twitter",
+      url: "https://twitter.com/IU6FZL",
+      iconClassName: "fab fa-4x fa-twitter"
+    },
+    {
+      label: "Linkedin",
+      url: "https://www.linkedin.com/in/andrea-salvatori-432929166/",
+      iconClassName: "fab fa-4x fa-linkedin-in"
+    },
+    {
+      label: "MyAnimeList",
+      url: "https://myanimelist.net/animelist/YoshiroYamashita",
+      iconClassName: "fas fa-4x fa-film"
+    }
+  ],
   themeColor: "#A449FF", // Used for setting manifest and progress theme colors.
   backgroundColor: "#fff", // Used for setting manifest background color.
 }

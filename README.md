@@ -2,9 +2,9 @@
 ![Prod CI](https://github.com/Sonic0/personal-website/workflows/Prod%20CI/badge.svg)
 ![Dev CI](https://github.com/Sonic0/personal-website/workflows/Dev%20CI/badge.svg)
 
-# andreasalvatori.net - andreasalvatori.info
+# andreasalvatori.info
 
-My personal website running on Gatsby, hosted on AWS S3 and served by CloudFront
+My personal website running on Gatsby v3, hosted on AWS S3 and served by CloudFront.
 
 ## Infrastructure
 
@@ -12,7 +12,7 @@ My personal website running on Gatsby, hosted on AWS S3 and served by CloudFront
     <img src="https://drive.google.com/uc?export=view&id=1zY-I_dZOtORtHzBSepdfkQnQPvxkPj7R" style="width: 500px; max-width: 100%; height: auto" title="Click for the larger version." />
 </a>
 
-### 🚀 Features
+## 🚀 Features
 
 - Sass Ready
 - Bulma CSS Framework
@@ -20,7 +20,7 @@ My personal website running on Gatsby, hosted on AWS S3 and served by CloudFront
 - Progressive Web App
 - Sticky footer
 
-### 🎨 Colors
+## 🎨 Colors
 
 | Color          | Hex                                                                |
 | -------------- | ------------------------------------------------------------------ |
