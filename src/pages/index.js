@@ -17,6 +17,7 @@ const IndexPage = ({ data }) => {
         author={page.author}
         authorDescription={page.authorDescription}
         avatar={files.childImageSharp.gatsbyImageData}
+        userLinks={page.userLinks}
       />
     </Layout>
   );
@@ -41,6 +42,11 @@ export const query = graphql`{
       author
       authorName
       authorDescription
+      userLinks {
+        label
+        url
+        iconClassName
+      }
     }
   }
   file(relativePath: {eq: "avatar.png"}) {

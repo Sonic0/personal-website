@@ -10,6 +10,7 @@ module.exports = {
     authorName: config.authorName,
     authorDescription: config.userDescription,
     siteUrl: urljoin(config.siteUrl, config.pathPrefix),
+    userLinks: config.userLinks
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

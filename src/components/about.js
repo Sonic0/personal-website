@@ -28,8 +28,7 @@ export default class About extends Component {
           </div>
 
           <div
-            class="is-size-2 is-size-4-mobile has-text-centered"
-            style={{ marginTop: "20px" }}
+            class="is-size-2 is-size-5-touch has-text-centered mt-5"
           >
             <NickName
               nickName={this.props.shortName}
@@ -38,18 +37,15 @@ export default class About extends Component {
             />
           </div>
 
-          <div class="is-size-3 is-size-6-mobile has-text-centered">
+          <div class="is-size-3 is-size-5-touch has-text-centered">
             <span>
               {this.props.authorDescription}
             </span>
           </div>
           
           {/* List of social icons flex */}
-          <div
-            class="is-size-7-mobile"
-            style={{ marginTop: "30px", width: "50vh" }}
-          >
-            <SocialLinks />
+          <div>
+              <SocialLinks userLinks={this.props.userLinks} />
           </div>
 
         </div>

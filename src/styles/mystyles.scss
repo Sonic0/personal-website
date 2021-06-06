@@ -62,7 +62,6 @@ $input-shadow: none;
 ul#inline-list-unstyled li {
   display: inline;
   list-style: none;
-  margin: 10px;
 }
 // Margins for buttons
 #btn-spaced {
@@ -120,11 +119,13 @@ ul#inline-list-unstyled li {
 }
 
 /* ############## */
-.icons-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
+// .icons-box {
+//   display: flex;
+//   flex-direction: row;
+//   flex-flow: row;
+//   flex-wrap: wrap;
+//   justify-content: space-between;
+// }
 
 .about {
   height: 85vh;
