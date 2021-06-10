@@ -30,6 +30,11 @@ const config = {
       iconClassName: "fab fa-4x fa-github"
     },
     {
+      label: "AniList.co",
+      url: "https://anilist.co/user/Sonic0/animelist",
+      iconClassName: "fas fa-4x fa-laugh-squint"
+    },
+    {
       label: "Twitter",
       url: "https://twitter.com/IU6FZL",
       iconClassName: "fab fa-4x fa-twitter"
@@ -38,11 +43,6 @@ const config = {
       label: "Linkedin",
       url: "https://www.linkedin.com/in/andrea-salvatori-432929166/",
       iconClassName: "fab fa-4x fa-linkedin-in"
-    },
-    {
-      label: "MyAnimeList",
-      url: "https://myanimelist.net/animelist/YoshiroYamashita",
-      iconClassName: "fas fa-4x fa-film"
     }
   ],
   themeColor: "#A449FF", // Used for setting manifest and progress theme colors.
